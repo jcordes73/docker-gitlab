@@ -1,5 +1,5 @@
-FROM centos:centos7
-MAINTAINER jbrooks@redhat.com
+FROM rhel:rhel7
+MAINTAINER jcordes@redhat.com
 
 RUN yum update -y; yum clean all
 RUN yum -y install epel-release; yum clean all
