@@ -1,7 +1,6 @@
 FROM rhel:rhel7
 MAINTAINER jcordes@redhat.com
 
-RUN yum update -y; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum install -y supervisor logrotate nginx openssh-server \
     git postgresql ruby rubygems python python-docutils \

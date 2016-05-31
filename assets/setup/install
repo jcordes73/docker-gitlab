@@ -58,7 +58,7 @@ cd ${GITLAB_INSTALL_DIR}
 sed "/headers\['Strict-Transport-Security'\]/d" -i app/controllers/application_controller.rb
 
 # copy default configurations
-
+mkdir -p /etc/nginx/conf.d
 cp lib/support/nginx/gitlab /etc/nginx/conf.d/gitlab.conf
 sudo -u git -H cp config/gitlab.yml.example config/gitlab.yml
 sudo -u git -H cp config/resque.yml.example config/resque.yml

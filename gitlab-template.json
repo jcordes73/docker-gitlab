@@ -42,10 +42,10 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jcordes73/openshift-gitlab",
+                  "uri": "https://github.com/jcordes73/docker-gitlab",
                   "ref": "master"
                },
-               "contextDir": "gitlab/gitlab-container"
+               "contextDir": ""
             },
             "strategy": {
                "type": "Docker",
